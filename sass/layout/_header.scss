@@ -17,6 +17,29 @@
   width: 40px;
   height: 40px;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+  }
+  .navigaton {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 /*.header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -108,7 +131,7 @@
   color: var(--accent-color);
   outline: none;
   &.tel-img,
-  & .tel-img {
+  &.tel-img {
     fill: var(--accent-color);
   }
 }
@@ -132,4 +155,5 @@
       transform: translateY(28px);
     }
   }
-}*/
+}
+*/
