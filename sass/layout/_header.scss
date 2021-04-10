@@ -1,3 +1,5 @@
+/****************************МОБИЛКА********************************************/
+
 .navigation-list {
   display: none;
 }
@@ -99,7 +101,6 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  margin-bottom: 32px;
 }
 .mail-link {
   color: var(--accent-second-color);
@@ -113,19 +114,17 @@
 .mobile-social-menu {
   display: flex;
 }
-.mobile-social-item {
-  display: flex;
-}
-.mobile-social-link::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 22px;
-  height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background: var(--accent-second-color);
+.mobile-social-item:not(:last-child) {
   margin-right: 10px;
 }
+.mobile-social-link {
+  @include font(18px, 500, 1.22);
+  letter-spacing: 0.02em;
+  font-family: var(--main-font);
+  color: var(--accent-color);
+}
+/************************ ПЛАНШЕТ  ****************************/
+
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 26px;
@@ -133,6 +132,9 @@
     border-bottom: 1px solid #ececec;
   }
   .burger-btn {
+    display: none;
+  }
+  .mobile-menu {
     display: none;
   }
 }
@@ -205,6 +207,7 @@
     margin-bottom: 10px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .mail-img {
     width: 14px;
