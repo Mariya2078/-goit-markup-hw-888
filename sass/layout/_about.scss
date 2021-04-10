@@ -27,3 +27,11 @@
   color: #ffffff;
   bottom: 0;
 }
+@media screen and (max-width:1200px){
+  .about {
+    display: none;
+  }
+  .about-img {
+    display: none;
+  }
+}

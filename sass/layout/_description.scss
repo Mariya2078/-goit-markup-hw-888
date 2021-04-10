@@ -1,4 +1,42 @@
+
+
 .photo-before-list {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+    }
+   .photo-before-list-item {
+    display: block;
+    flex-shrink: 0;
+    width: 66px;
+    height: 70px;
+      }
+  .discription-block{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30pt;
+  }
+
+@media screen and (max-width:1200px){
+  .photo-before{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+.photo-before-list-icon:not(:last-child){
+  margin-bottom: 30px;
+}
+}
+
+
+
+
+/*.photo-before-list {
   display: flex;
   padding-top: 94px;
 }
@@ -42,4 +80,4 @@
   @include font(14px, 400, 1.71);
   letter-spacing: 0.03em;
   color: var(--accent-second-color);
-}
+}*/
