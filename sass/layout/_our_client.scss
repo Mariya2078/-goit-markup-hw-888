@@ -37,6 +37,20 @@
 margin-bottom: 30px;
 }
 
+@media screen and (min-width:768px){
+  .client-list-link {
+    width: 226px;
+    height: 92px;}
+    .client-list{
+    margin-right: 30px;
+    }
+    .client-list:nth-child(3n){
+      margin-right: 0;
+    }
+    .client-list:nth-child(4){
+      margin-bottom: 0;
+    }
+}
 /*.client {
   padding-top: 94px;
   padding-bottom: 94px;
