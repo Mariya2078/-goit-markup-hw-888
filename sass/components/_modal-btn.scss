@@ -24,16 +24,17 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
-
-/*.modal {
+/*MOДАЛЬНОЕ ОКНО*/
+.modal {
   position: absolute;
-  width: 528px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   background-color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-close-btn {
   position: absolute;
@@ -58,29 +59,15 @@
   visibility: hidden;
   opacity: 0;
 }
-.modal-btn {
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  text-align: center;
-  min-width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+@media screen  and (min-width:1200px){
+  .modal{
+    width: 528px;
+    height: 580px;
   }
-}*/
+
+}
+
+
+
