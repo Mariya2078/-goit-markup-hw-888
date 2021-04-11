@@ -84,6 +84,27 @@
   align-items: center;
 }
 
+@media screen and (min-width:768px) {
+.address{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  .address-list{
+    padding-left: 76px;
+  }
+.footer-link{
+  margin-bottom: 102px;
+  padding-right: 88px;
+  margin-left: auto;
+}
+
+
+  
+}
+
+
 /*
 .footer {
   background-color: #2f303a;

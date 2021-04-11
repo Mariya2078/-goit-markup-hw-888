@@ -52,6 +52,15 @@
   fill: #ffffff;
   margin-left: 10px;
 }
+@media screen and (min-width:768px){
+  .footer-form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+}
 /*
 .footer-form {
   display: block;
