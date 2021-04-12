@@ -99,10 +99,30 @@
   padding-right: 88px;
   margin-left: auto;
 }
-
-
   
 }
+
+@media screen and (min-width:1200px)
+{
+  .address{
+    display: flex;
+    align-items: center;
+   
+      }
+  .address-list{
+        padding-left: 0;
+        margin-bottom: 0;
+        display: block;
+      
+              }
+  .footer-link{
+    margin-bottom: 40px;
+    padding-right: 0;
+    margin-left: 70px;
+  }
+
+}
+
 
 
 /*

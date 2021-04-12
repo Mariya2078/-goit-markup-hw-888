@@ -56,8 +56,7 @@
     }
   }
   .modal-btn{
-    position: relative;
-    transform: translateX(-270px);
+    transform: translateX(0);
   }
 }
 
@@ -83,6 +82,7 @@
       ),
       url("../img/background/background_desktop/img@2x.jpg");
     }
+    
   }
   .hero-title {
     @include font(44px, 900, 1.36);
@@ -92,9 +92,7 @@
     color: #ffffff;
     align-items: center;
   }
-  .modal-btn{
-    transform: translateX(-480px);
-  }
+  
 }
 
 
