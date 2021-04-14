@@ -1,8 +1,7 @@
 .social-list {
   margin-top: 16px;
   display: flex;
-  padding-left: 122px;
-  padding-right: 122px;
+ justify-content: center;
   align-items: center;
 }
 .social-list-item:not(:last-child) {

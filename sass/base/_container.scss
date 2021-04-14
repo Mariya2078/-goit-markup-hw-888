@@ -1,18 +1,22 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  .header & {
+  margin-left: auto;
+  margin-right: auto;
+  .header & {/*контейнер который в хедере*/
     display: flex;
+    align-items: center;
     justify-content: space-between;
-  }
+    
+}
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
-   
+       
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
