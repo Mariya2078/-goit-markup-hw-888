@@ -105,7 +105,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  margin-bottom: 32px;
+
 }
 .mail-link {
   color: var(--accent-second-color);
@@ -129,6 +129,10 @@
   color: var(--accent-color);
 }
 @media screen and (max-width:768px) {
+  .tel-link {
+    
+    margin-bottom: 32px;
+  }
   .navigation-item:not(:last-child){
     margin-bottom:32px ;
     font-family: Roboto;
@@ -157,6 +161,7 @@
   .mobile-menu {
     display: none;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
