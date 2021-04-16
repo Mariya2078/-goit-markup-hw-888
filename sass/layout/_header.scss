@@ -289,6 +289,19 @@
         transform: translateY(28px);
       }
     
-  
-}
+      .mail-link,
+      .tel-link {
+        @include font(14px, 500, 1.14);
+              }
+      .mail-img{
+        width: 16px;
+        height: 12px;
+      }
+      .tel-img {
+        width: 10px;
+        height: 16px;
+      }
+             
+      }
+
 

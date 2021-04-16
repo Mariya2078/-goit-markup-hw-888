@@ -539,6 +539,20 @@ body {
   .navigation-link-studio::after {
     transform: translateY(28px);
   }
+  .mail-link,
+  .tel-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+  }
+  .mail-img {
+    width: 16px;
+    height: 12px;
+  }
+  .tel-img {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .hero {
