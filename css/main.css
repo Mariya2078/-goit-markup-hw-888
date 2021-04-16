@@ -177,14 +177,34 @@ body {
 /*MOДАЛЬНОЕ ОКНО*/
 .modal {
   position: absolute;
-  width: 100%;
-  max-width: 450px;
+  min-height: 609px;
+  min-width: 450px;
   background-color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 90vw;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-btn {
@@ -213,9 +233,6 @@ body {
   opacity: 0;
 }
 
-/*@media screen  and (min-width:480px){
-
-}*/
 /****************************МОБИЛКА********************************************/
 .navigation-list {
   display: none;
@@ -291,7 +308,7 @@ body {
 .navigation-list-menu {
   flex-direction: column;
   display: flex;
-  /*margin-bottom: 306px;*/
+  margin-bottom: 306px;
 }
 
 .info-mobile-menu {
@@ -328,6 +345,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 32px;
 }
 
 .mail-link {
@@ -355,6 +373,21 @@ body {
   letter-spacing: 0.02em;
   font-family: var(--main-font);
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-item:not(:last-child) {
+    margin-bottom: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
+  .navigation-link-studio-menu {
+    color: var(--accent-color);
+  }
 }
 
 /************************ ПЛАНШЕТ  ****************************/
@@ -564,7 +597,7 @@ body {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background/background_desktop/img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background/background_desktop/img2@2x.jpg");
   }
 }
 
@@ -760,6 +793,7 @@ body {
   padding-top: 30px;
   padding-bottom: 24px;
   background-color: white;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1071,7 +1105,6 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
   }
   .portfolio-list-link {
@@ -1425,7 +1458,7 @@ body {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     padding: 94px 15px;
   }
@@ -1444,8 +1477,14 @@ body {
   margin-bottom: 20px;
 }
 
+.footer-label {
+  display: block;
+  width: 100%;
+}
+
 .modal-form-input-footer {
-  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;

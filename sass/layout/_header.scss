@@ -69,12 +69,14 @@
 .navigation-list-menu {
   flex-direction: column;
   display: flex;
-  /*margin-bottom: 306px;*/
+  margin-bottom: 306px;
 }
 .info-mobile-menu {
   flex-direction: column;
   display: flex;
+  
 }
+
 
 .navigation-link-studio-menu,
 .navigation-link-menu {
@@ -103,6 +105,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 32px;
 }
 .mail-link {
   color: var(--accent-second-color);
@@ -124,6 +127,21 @@
   letter-spacing: 0.02em;
   font-family: var(--main-font);
   color: var(--accent-color);
+}
+@media screen and (max-width:768px) {
+  .navigation-item:not(:last-child){
+    margin-bottom:32px ;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+  }
+  .navigation-link-studio-menu{
+    color: var(--accent-color);
+  }
 }
 /************************ ПЛАНШЕТ  ****************************/
 
