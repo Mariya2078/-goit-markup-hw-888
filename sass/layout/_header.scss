@@ -49,6 +49,7 @@
   top: 0;
   left: 50%;
   width: 100vw;
+  height: 100vh;
   max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
@@ -127,7 +128,17 @@
   letter-spacing: 0.02em;
   font-family: var(--main-font);
   color: var(--accent-color);
+ 
 }
+.mobile-social-item{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mobile-social-item:not(:last-child){
+  border-right: 1px solid rgba(33,33,33,0.2);
+}
+
 @media screen and (max-width:768px) {
   .tel-link {
     
