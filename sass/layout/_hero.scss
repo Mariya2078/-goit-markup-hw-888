@@ -12,9 +12,8 @@
   min-height: 400px;
   padding-top: 118px;
 }
-@media (min-device-pixel-ratio:2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx)
+@media not all, screen and (max-width: 767px) 
+and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx)
 {
   .hero{
     background-image: linear-gradient(
